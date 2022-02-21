@@ -1,0 +1,15 @@
+ul {
+    list-style-type: none;
+}
+
+li {
+    display: inline-flex;
+    padding-left: 2rem;
+    font-size: medium;
+}
+
+.link{
+    background-color: black;
+    color: lavender;
+    text-decoration: none;
+  }

@@ -5,25 +5,23 @@ import "./styleCategory.css";
 
 const DisplayProduct = ({ cat, id, title, image, price, rate, count }) => {
   return (
-    <li className="card-category">
-      <div>
+    <li className="cardCategory">
         <div>
           <Link to={`/product/${cat}/${id}`} className="linkC">
             <h3>{title}</h3>
           </Link>
         </div>
         <div>
-          <Link to={`/product/${cat}/${id}`} className="image">
-            <img src={image} alt={title} />
+          <Link to={`/product/${cat}/${id}`}>
+            <img src={image} alt={title} className="imgCategory"/>
           </Link>
         </div>
-        <div className="content">
+        <div className="contentCategory">
           <p className="pl">Price: {price}</p>
           <p className="pr">
             Rating: {rate} ({count})
           </p>
         </div>
-      </div>
     </li>
   );
 };
@@ -40,7 +38,7 @@ const Category = () => {
   return (
     <div>
       <h2>{category}</h2>
-      <ul>
+      <ul className="ulCategory">
         {products.length === 0 && <div>Loading {category}...</div>}
         {products.length > 0 &&
           products.map(({ id, title, price, image, rating }) => {

@@ -17,13 +17,13 @@ const DisplayProduct = ({
     <div>
       <div className="card">
         <h3>{title}</h3>
-        <div className="image">
+        <div className="imageProduct">
           <img src={image} alt={title}></img>
         </div>
-        <div className="content">
+        <div className="contentProduct">
           <p>Price: {price}</p>
           <p>Features: {description}</p>
-          <p>
+          <p className="pr">
             Rating: {rating} ({count})
           </p>
         </div>

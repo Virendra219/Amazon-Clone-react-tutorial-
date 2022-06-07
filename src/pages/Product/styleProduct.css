@@ -2,42 +2,32 @@
   background-color: white;
   width: 40%;
   margin: 3rem auto;
-  border-radius: 6px;
+  border-radius: 20px;
   box-shadow: 0 4px 15px rgba(49, 33, 33, 0.2);
   padding: 5px;
 }
 
-.image {
-  width: 100%;
-  overflow: hidden;
-  border-top-right-radius: 6px;
-  border-top-left-radius: 6px;
-  margin-left: 1px;
-  margin-right: 3px;
-}
-
-.image img {
-  width: 100%;
-  object-fit: cover;
-}
-
-.content {
-  text-align: center;
-  margin-top: 1rem;
-  padding: 1rem;
-}
-
-.pl {
-  text-align: left;
-}
-.pr {
-  text-align: right;
-}
-
 .card h3 {
-  font-size: 1.25rem;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 1.5rem;
   color: #2c292b;
   text-decoration: none;
+}
+
+.imageProduct img {
+  max-width: 90%;
+  height: 500px;
+  display: block;
+  margin: 0px auto;
+  object-fit: contain;
+}
+
+.contentProduct {
+  text-align: left;
+  font-size: 1.2rem;
+  margin-left:auto;
+  padding: 1rem;
 }
 
 .link {

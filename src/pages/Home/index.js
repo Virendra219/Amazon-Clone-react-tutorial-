@@ -14,15 +14,19 @@ const Home = () => {
       <h2>Categories</h2>
       {categories.length === 0 && <div>Loading...</div>}
       {categories.length > 0 && (
-        <ul>
-          {categories.map((category) => {
-            return (
-              <li key={category}>
-                <Link to={`/product/${category}`} className="link">{category}</Link>
-              </li>
-            );
-          })}
-        </ul>
+        <nav>
+          <ul>
+            {categories.map((category) => {
+              return (
+                <li key={category} className="listHome">
+                  <Link to={`/product/${category}`} className="linkHome">
+                    {category}
+                  </Link>
+                </li>
+              );
+            })}
+          </ul>
+        </nav>
       )}
     </div>
   );
